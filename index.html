@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Pratap Singh - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+<body>
+    <div id="main">
+        <div id="page1">
+            <nav>
+                <h1>Aditya Pratap Singh</h1>
+                <div class="menu-btn">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <ul>
+                    <li>Projects</li>
+                    <li>About me</li>
+                    <li class="resume">Resume</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Side Menu -->
+    <div class="side-menu">
+        <div class="side-menu-content">
+            <ul>
+                <li>Projects</li>
+                <li>About me</li>
+                <li class="resume">Resume</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <section id="section1">
+      <div class="page2">
+        
+        
+        <h1> Supercharge your ideas with my product degine skills</h1>
+        <h3><span class="span1">Interaction Deginer</span>, based out of New Delhi 🌼 I belive it is  necessary to understand the <span class="span2">human need </span>  behind every problem statment 🦋</h3>
+        <div class="button">
+          <h4 class="btn1">Resume</h4>
+          <h4 class="btn2"> View projects ▶ </h4>
+         </div>
+       
+          <div class="image"><img src="Wf1NTkeIsTzKuFYctMDFEgYaGUU.avif" alt=""></div>
+         
+
+      </div>
+    </section>
+
+    <section id="section2">
+      <div class="page3">
+        <h1>Past colabration</h1>
+     
+
+      <div class="container">
+        <h1 class="split">
+          <div><img src="images/bharatpay.png  " style="width: 100px;" alt="">2024</div>
+          <div><img src="images/dlf.png" alt="">2023</div>
+          <div><img src="images/iit.png" style="width: 200px;" alt="">2022</div>
+          <div><img src="images/heart.png" alt="">2021</div>
+         
+          <div><img src="images/yalc.png" alt="">2019</div>
+
+          <div class="container2"> 
+            <div class="inside-con">
+              <img src="images/img1.png" alt="">
+              <div>
+                <h1>Bharatpe Internaship Project</h1>
+                <h3>This case study entails where did I intern, under which role, what tasks and projects I was assigned and what was my approach.</h3>
+                <button>Learn More</button>
+              </div>
+            </div>
+          </div>
+        
+        </h1>
+      </div>
+    </div>
+    </section>
+       
+<section id="section3">
+  <div class="page4">
+   <h4>EXPLORATIVE RESEARCH</h4>
+   <h1>These are few of my selected projects</h1>
+   <p>These projects are a part of explorative research domain. These projects focus on UX Research and Tech based Research. If you have insights about any project or want to collabrate, hit me up!</p>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script> document.addEventListener("DOMContentLoaded", () => {
+      const menuBtn = document.querySelector('.menu-btn');
+      const sideMenu = document.querySelector('.side-menu');
+  
+      // Toggle sidebar visibility on menu button click
+      menuBtn.addEventListener('click', (event) => {
+          menuBtn.classList.toggle('active');
+          sideMenu.classList.toggle('active');
+          event.stopPropagation(); // Prevents closing sidebar immediately on button click
+      });
+  
+      // Close sidebar when clicking outside of it
+      document.addEventListener('click', (event) => {
+          if (sideMenu.classList.contains('active') && !sideMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+              menuBtn.classList.remove('active');
+              sideMenu.classList.remove('active');
+          }
+      });
+  
+      // Close sidebar on screen resize to laptop mode or smaller
+      window.addEventListener('resize', () => {
+          if (window.innerWidth <= 1024) { // Adjust 1024px as per your "laptop mode" breakpoint
+              menuBtn.classList.remove('active');
+              sideMenu.classList.remove('active');
+          }
+      });
+  });
+  </script>
+</body>
+</html>

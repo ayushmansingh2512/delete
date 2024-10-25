@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+ 
+
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: nb;
+    color: #000;
+    position: relative;
+    overflow-x: hidden;
+
+   
+}
+
+#page1 {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #66666633;
+    padding: 20px 0;
+   
+}
+
+nav {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > h1 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+nav > h1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav > ul > li {
+    cursor: pointer;
+}
+
+nav > ul > .resume {
+    background-color: #0f0e0ed4;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 16px;
+    transition: 0.3s;
+    color: white;
+}
+
+nav > ul > .resume:hover {
+    padding: 12px 22px;
+}
+
+/* Menu Button Styles */
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.menu-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.menu-icon span:nth-child(1) { top: 0; }
+.menu-icon span:nth-child(2) { top: 9px; }
+.menu-icon span:nth-child(3) { top: 18px; }
+
+/* Menu Button Active State */
+.menu-btn.active .menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-btn.active .menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.active .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.side-menu {
+    position:absolute;
+    top: 100;
+    right: -300px; /* Keeps it hidden offscreen initially */
+    width: 300px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease; /* Smooth transition */
+    z-index: 999;
+ 
+    display: none;
+}
+
+.side-menu.active {
+    right: 0; /* Slides the menu in */
+}
+
+
+.side-menu-content {
+    padding: 80px 40px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    margin: 20px 0;
+    font-size: 18px;
+    cursor: pointer;
+     
+}
+
+.side-menu .resume {
+    background-color: #0f0e0ed4;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 16px;
+    transition: 0.3s;
+    color: white;
+    display: inline-block;
+}
+
+.side-menu .resume:hover {
+    padding: 12px 22px;
+}
+
+
+
+#section1{
+    margin: 100px;
+   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.page2{
+    width: 800px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+  
+   
+   
+}
+
+.page2>h1{
+    padding:0 90px;
+    font-size: 54px;
+     font-weight:bolder;
+     margin: 0;
+}
+
+
+.page2>h3{
+    font-size:24px;
+    color: #878686;
+    font-weight: 500;
+    font-family: inter;
+    line-height: 40px;
+    margin: 50px 0;
+   
+
+}
+
+.page2>h3>.span1{
+   color: royalblue;
+}
+
+.page2>h3>.span2{
+    color: rosybrown;
+}
+
+.button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+.btn1{
+    background-color: royalblue;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 16px;
+    transition: 0.3s;
+    color: white;
+    cursor: pointer;
+}
+
+.btn2{
+    text-align: center;
+    word-spacing: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: rejoy;
+    
+}
+
+.btn2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ .image{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+    align-items: center;
+    
+ }
+.image>img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+
+}
+
+
+
+#section2{
+    margin: 100px;
+   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.page3{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 60px;
+
+   
+}
+.page3>h1{
+font-size: 54px;
+}
+
+
+.split{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.split>div{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.split>div>img{
+    width: 100px;
+    
+
+}
+
+
+.container{
+    overflow: hidden;
+ 
+    padding-top: 3rem ;
+    
+}
+
+
+#section3{
+    
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.page4{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+    gap: 24px;
+
+
+}
+
+.page4>h4{
+    letter-spacing: 3px;
+    font-weight: 300;
+    color: #666;
+}
+.page4>h1{
+    font-size: 40px;
+}
+.page4>p{
+    font-weight: 300;
+    color: #666;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+
+    nav {
+        width: 90%;
+        padding: 0 20px;
+    }
+    .side-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    nav > ul {
+        display: none;
+    }
+  
+    .menu-btn {
+        display: block;
+    }
+    .side-menu {
+        display: block;
+    }
+}
